@@ -1,7 +1,22 @@
-﻿body {
+﻿@import './fonts/stylesheet.css';
+
+body {
     margin: 0;
     box-sizing: border-box;
     background: linear-gradient(180deg, #CB6AEE 0%, #8533B2 14.3%, #5A1287 31.01%, #420C64 47.34%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
 }
 
 .textcolor__dp {    
@@ -12,21 +27,40 @@
     color: #D684F2;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'hooge 05_54';
+    margin: 0px;
+}
+
+.button {
+    font-family: 'hooge 05_54';
+    font-size: 32px;
+    padding: 10px 28px 10px 28px;
+    border: 4px solid white;
+}
+
+a {
+    font-family: 'Aldrich';
+    font-size: 24px;
+    color: #FFF;
+}
+
+h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    word-wrap: break-word;
+}
+
 .text__nav {
     font-family: 'hooge 05_54';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
-}
-
-.container {
-    width: 1600px;
-    margin: auto;
-}
-
-.hide {
-    display: none;
 }
 
 .header {
@@ -37,9 +71,40 @@
 
 .header__flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header__flex li {
     display: inline;
+}
+
+.intro {
+    height: 966px;
+    display: flex;
+}
+
+.intro__img {
+    width: 50%;
+}
+
+.intro__text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 125px;
+}
+
+.padding__intro {
+    padding: 48px 0px 64px;
+}
+
+.intro__p {
+    font-size: 32px;
+    font-family: 'Aldrich';
+    color: #FFF;
+}
+
+.hide {
+    display: none;
 }

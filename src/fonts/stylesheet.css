@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'hoog 0553';
+    src: url('HOOG0553.woff2') format('woff2'), url('HOOG0553.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hoog 0554';
+    src: url('HOOG0554.woff2') format('woff2'), url('HOOG0554.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hoog 0555';
+    src: url('HOOG0555.woff2') format('woff2'), url('HOOG0555.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('Aldrich-Regular.eot');
+    src: local('Aldrich Regular'), local('Aldrich-Regular'), url('Aldrich-Regular.eot?#iefix') format('embedded-opentype'), url('Aldrich-Regular.woff2') format('woff2'), url('Aldrich-Regular.woff') format('woff'), url('Aldrich-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -12,8 +12,20 @@ body {
 
 .container {
     max-width: 1600px;
+    padding: 0 16px;
     margin: auto;
 }
+
+@media (max-width: 768px) {
+    .container {
+      max-width: 736px;
+    }
+  }
+  @media (max-width: 375px) {
+    .container {
+      max-width: 343px;
+    }
+  }
 
 a, p {
     font-family: 'Aldrich';

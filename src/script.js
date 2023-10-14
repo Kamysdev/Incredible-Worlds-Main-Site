@@ -28,20 +28,16 @@ window.onclick = function (event)
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
 
-
-let anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-
-        let blockID = anchor.getAttribute('href').substr(1)
-
-        document.getElementById(blockID).scrollIntoView({
+        document.querySelector(id).scrollIntoView({
             behavior: 'smooth',
-            block: 'start',
-        })
-    })
-}
+            block: 'start'
+        });
+    });
+};
+

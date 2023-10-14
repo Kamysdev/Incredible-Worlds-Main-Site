@@ -27,12 +27,13 @@ body {
     }
 }
 
-a, p {
+p {
     font-family: 'Aldrich';
 }
 
 a {
     text-decoration: none;
+    font-family: 'hooge 05_54';
 }
 
 p {
@@ -112,6 +113,15 @@ h4 {
     }
 }
 
+.logo__upscale { }
+
+@media (max-width: 400px) {
+    .logo__upscale {
+        width: auto;
+        height: 50px;
+    }
+}
+
 .text__nav {
     font-family: 'hooge 05_54';
     font-size: 24px;
@@ -175,8 +185,6 @@ h4 {
         padding-left: 0;
         text-align: center;
     }
-
-
 }
 
 .game__cards {
@@ -199,6 +207,7 @@ h4 {
     width: 350px;
     height: auto;
     padding: 32px;
+    backdrop-filter: blur(5px);
 
     display: flex;
     flex-direction: column;
@@ -209,6 +218,12 @@ h4 {
     word-wrap: break-word;
     text-align: center;
     margin: 32px 0 48px;
+}
+
+.card__img {
+    height: auto;
+    width: 250px;
+    margin-bottom: 24px;
 }
 
 .card__button {
@@ -300,7 +315,7 @@ h4 {
         cursor: pointer;
     }
 
-        .dropbtn:hover, .dropbtn:focus {
+        .dropbtn:hover, .dropbtn:active {
             background-color: #B349D9;
             color: white;
         }
@@ -346,5 +361,17 @@ h4 {
 
     .show {
         display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .dropbtn {
+        font-family: 'hooge 05_54';
+        border: 2px solid black;
+        background-color: white;
+        color: darkorchid;
+        padding: 12px;
+        font-size: 16px;
+        cursor: pointer;
     }
 }

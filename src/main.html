@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
 <html>
     <head>
+        <link rel="shortcut icon" href="./img/short_logo.png" />
         <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Incredible Worlds</title>
@@ -8,27 +9,27 @@
     </head>
 
     <body>
-        <header class="header">
+        <header class="header" id="Home">
             <div class="container header__flex">
                 <h1 class="hide">Incredible Worlds</h1>
-                <img src="./img/logo.png" alt="Incredible Worlds" />
+                <img src="./img/logo.png" alt="Incredible Worlds" class="logo__upscale" />
                 <nav>
                     <div class="text__nav textcolor__lp">
                         <ul class="text__nav textcolor__lp hide1">
-                            <li class="textcolor__dp">Home</li>
-                            <li class="text__nav__li">Games</li>
-                            <li class="text__nav__li">About us</li>
-                            <li class="text__nav__li">Join us</li>
-                            <li class="text__nav__li">Wiki</li>
+                            <li><a class="textcolor__dp" href="#Home">Home</a></li>
+                            <li><a class="text__nav__li textcolor__lp" href="#Games">Games</a></li>
+                            <li><a class="text__nav__li textcolor__lp" href="#About_us">About us</a></li>
+                            <li><a class="text__nav__li textcolor__lp" href="#">Join us</a></li>
+                            <li><a class="text__nav__li textcolor__lp" href="#">Wiki</a></li>
                         </ul>
                         <div class="dropdown hide2">
                             <button onclick="myFunction()" class="dropbtn">Menu</button>
                             <div id="myDropdown" class="dropdown-content">
                                 <a class="textcolor__dp">Home</a>
-                                <a class="text__nav__li">Games</a>
-                                <a class="text__nav__li">About us</a>
-                                <a class="text__nav__li">Join us</a>
-                                <a class="text__nav__li">Wiki</a>
+                                <a class="text__nav__li" href="#Games">Games</a>
+                                <a class="text__nav__li" href="#About_us">About us</a>
+                                <a class="text__nav__li" href="#">Join us</a>
+                                <a class="text__nav__li" href="#">Wiki</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +38,6 @@
         </header>
         <div class="mouse-parallax">
             <div class="mouse-parallax-bg"></div>
-            
             <section class="intro container">
                 <div class="intro__img">
                     </div>
@@ -49,7 +49,6 @@
                         </div>
                     </div>
             </section>
-    
             <section class="container">
                 <h3 id="Games">
                     Games
@@ -57,63 +56,47 @@
                 <div class="game__cards">
                     <div class="card">
                         <div>
-
+                            <img class="card__img" src="./img/dungeon_guardians.png" alt="best game #1"/>
                         </div>
-                        <h4>
-                            Dungeon guardians
-                        </h4>
+                        <h4>Dungeon guardians</h4>
                         <p class="card__p">Classic top-down RPG with endless generation</p>
-                        <a class="card__button">
-                            Treasure!
-                        </a>
+                        <a class="card__button" href="#">Treasure!</a>
                     </div>
                     <div class="card">
                         <div>
-                            
+                            <img class="card__img" src="./img/minesweeper.png" alt="best game #2"/>
                         </div>
-                        <h4>
-                            Dungeon guardians
-                        </h4>
-                        <p class="card__p">Classic top-down RPG with endless generation</p>
-                        <a class="card__button">
-                            Treasure!
-                        </a>
+                        <h4>Minesweeper</h4>
+                        <p class="card__p">Clear all the fields, save the 2D girls right now</p>
+                        <a class="card__button" href="#">Defuse!</a>
                     </div>
                     <div class="card">
                         <div>
-                            
+                            <img class="card__img" src="./img/logic_game.png" alt="best game #3" />
                         </div>
-                        <h4>
-                            Dungeon guardians
-                        </h4>
-                        <p class="card__p">Classic top-down RPG with endless generation</p>
-                        <a class="card__button">
-                            Treasure!
-                        </a>
+                        <h4>Fifteen Puzzles</h4>
+                        <p class="card__p">Can you complete the puzzle faster than your friends?</p>
+                        <a class="card__button" href="#">Slove now!</a>
                     </div>
                     <div class="card">
                         <div>
-                            
+                            <img class="card__img" src="./img/arkanoid.png" alt="best game #4" />
                         </div>
-                        <h4>
-                            Dungeon guardians
-                        </h4>
-                        <p class="card__p">Classic top-down RPG with endless generation</p>
-                        <a class="card__button">
-                            Treasure!
-                        </a>
+                        <h4>Arkanoid</h4>
+                        <p class="card__p">Reimagining an old game on modern devices! 
+                        Immerse yourself in 80s games and feel the spirit of that time</p>
+                        <a class="card__button" href="#">Back to the future!</a>
                     </div>
                 </div>
             </section>
-        </div>
-            <section class="about__us__color">
+            <section class="about__us__color" id="About_us">
                 <div class="container about__us__container">
                     <div class="about__us">
                         <h3 class="about__us__h  textcolor__lp">About us</h3>
                         <p class="textcolor__bl">Our indie studio develops games in different settings: puzzles, RPGs, time killers and etc</p>
                         <h3 class="about__us__h  textcolor__lp">Want to know more?</h3>
                         <p class="textcolor__bl">Go to the page with detailed information about our studio and join us!</p>
-                        <a class="button textcolor__bl about__us__button">Dive in!</a>
+                        <a class="button textcolor__bl about__us__button" href="#">Dive in!</a>
                     </div>
                     <img class="about-us__img" src="./img/aboutt_us_img.png" alt="Our place"/>
                 </div>

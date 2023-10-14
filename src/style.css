@@ -29,17 +29,16 @@ body {
 
 p {
     font-family: 'Aldrich';
+    margin: 0;
+    font-size: 24px;
+    color: white;
 }
 
 a {
     text-decoration: none;
     font-family: 'hooge 05_54';
-}
-
-p {
-    margin: 0;
     font-size: 24px;
-    color: white;
+    color: #FFF;
 }
 
 .textcolor__dp {    
@@ -64,11 +63,6 @@ h1, h2, h3, h4, h5 {
     font-size: 32px;
     padding: 10px 28px;
     border: 4px solid white;
-}
-
-a {
-    font-size: 24px;
-    color: #FFF;
 }
 
 h2 {
@@ -99,6 +93,12 @@ h4 {
     text-align: center; 
 }
 
+@media (max-width: 375px) {
+    h4 {
+        font-size: 26px;
+    }
+}
+
 @media (max-width: 532px) {
     h2 {
         font-size: 64px;
@@ -115,7 +115,7 @@ h4 {
 
 .logo__upscale { }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .logo__upscale {
         width: auto;
         height: 50px;
@@ -364,7 +364,7 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .dropbtn {
         font-family: 'hooge 05_54';
         border: 2px solid black;

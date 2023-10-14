@@ -31,6 +31,10 @@ a, p {
     font-family: 'Aldrich';
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     margin: 0;
     font-size: 24px;
@@ -118,12 +122,6 @@ h4 {
 
 .text__nav__li {
     padding-left: 48px;
-}
-
-@media (max-width: 1150px) {
-    .text__nav {
-      display: none;
-    }
 }
 
 .header {
@@ -266,13 +264,13 @@ h4 {
 
 
 .mouse-parallax {
-    height: 100hv;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
 .mouse-parallax-bg {
     position: absolute;
-    background-image: url("/src/img/stars.png");
+    background-image: url("./img/stars.png");
     background-position: top center;
     background-repeat: no-repeat;
     

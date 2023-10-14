@@ -20,12 +20,12 @@ body {
     .container {
       max-width: 736px;
     }
-  }
+}
   @media (max-width: 375px) {
     .container {
       max-width: 343px;
     }
-  }
+}
 
 a, p {
     font-family: 'Aldrich';
@@ -94,6 +94,20 @@ h4 {
     text-align: center; 
 }
 
+@media (max-width: 532px) {
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    .button {
+        font-size: 24px;
+    }
+}
+
 .text__nav {
     font-family: 'hooge 05_54';
     font-size: 24px;
@@ -106,6 +120,11 @@ h4 {
     padding-left: 48px;
 }
 
+@media (max-width: 1150px) {
+    .text__nav {
+      display: none;
+    }
+}
 
 .header {
     width: 100%;
@@ -148,11 +167,33 @@ h4 {
     color: #FFF;
 }
 
+@media (max-width: 1150px) {
+    .intro__img {
+        display: none;
+    }
+
+    .intro__text {        
+        width: auto;
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+}
+
 .game__cards {
     padding: 64px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1500px) {
+    
+    .game__cards {
+        justify-content: space-evenly;
+        gap: 32px;       
+    }   
 }
 
 .card {
@@ -180,14 +221,26 @@ h4 {
 }
 
 .about__us__container {
-    padding: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     display: flex;
     align-items: center;
+    gap: 32px;
 }
 
 .about__us {
     width: 50%;
     height: auto;
+}
+
+@media (max-width: 1450px) {
+    .about__us {
+        width: auto;
+    }
+    
+    .about-us__img {
+      display: none;
+    }
 }
 
 .about__us__color {
@@ -209,6 +262,24 @@ h4 {
 
 .hide {
     display: none;
+}
+
+
+.mouse-parallax {
+    height: 100hv;
+    position: relative;
+    overflow: hidden;
+}
+.mouse-parallax-bg {
+    position: absolute;
+    background-image: url("/src/img/stars.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 110%;
+    transition: all 0.1s ease;
+    z-index: -1;  
 }
 
 .hide1{
@@ -278,6 +349,3 @@ h4 {
         display: block;
     }
 }
-
-
-

@@ -109,7 +109,7 @@ h4 {
 
 .logo__upscale { }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .logo__upscale {
         width: auto;
         height: 50px;
@@ -358,7 +358,7 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .dropbtn {
         font-family: 'hooge 05_54';
         border: 2px solid black;

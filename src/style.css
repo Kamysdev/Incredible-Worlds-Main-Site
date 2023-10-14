@@ -283,6 +283,7 @@ h4 {
     position: relative;
     overflow: hidden;
 }
+
 .mouse-parallax-bg {
     position: absolute;
     background-image: url("./img/stars.png");

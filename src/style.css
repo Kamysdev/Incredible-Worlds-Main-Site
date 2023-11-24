@@ -326,9 +326,43 @@ h5 {
     height: auto;
 }
 
+@media (max-width: 1150px) {
+    .team__shortcut {
+        width: 70%;
+    }
+
+    .shortcut__img {
+        width: 40px;
+    }
+
+    .team__card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 850px) {
+    .team__shortcut {
+        width: 80%;
+    }
+
+    .team__card {
+        width: 35%;
+    }
+}
+
+@media (max-width: 530px) {
+    .shortcut__img {
+        width: 32px;
+    }
+}
+
 .footer__color {
     background-color: white;
     border-top: 4px dashed #B349D9;
+}
+
+.footer__color__wl__line {
+    background-color: white;
 }
 
 .footer__container {
@@ -381,7 +415,7 @@ h5 {
 
 .hide2{
     display: none;
-}
+} 
 
 @media (max-width: 1150px) {
     .dropbtn {
@@ -453,4 +487,44 @@ h5 {
         font-size: 16px;
         cursor: pointer;
     }
+}
+
+.games__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.games__h3 {
+    margin: 64px 0px 32px;
+}
+
+.game__field {
+    margin: 36px 0px;
+    width: 90%;
+    height: auto;
+    padding: 74px 0px 36px;
+    background: rgba(128.26, 34.28, 187, 0.55);
+    border: 8px white solid;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.game__field__info {
+    word-wrap: break-word;
+    max-width: 45%;
+}
+
+.temp__slider {
+    width: 518px;
+    height: 328px;
+}
+
+.game__field__p {
+    margin: 24px 0px 48px;
+}
+
+.text__align__left {
+    text-align: left;
 }

@@ -502,8 +502,7 @@ h5 {
 .game__field {
     margin: 36px 0px;
     width: 90%;
-    height: auto;
-    padding: 74px 0px 36px;
+    padding: 74px 32px;
     background: rgba(128.26, 34.28, 187, 0.55);
     border: 8px white solid;
     backdrop-filter: blur(6px);
@@ -517,8 +516,9 @@ h5 {
 }
 
 .temp__slider {
-    width: 518px;
-    height: 328px;
+    width: auto;
+    height: 100%;
+    margin: 8px;
 }
 
 .game__field__p {
@@ -527,4 +527,8 @@ h5 {
 
 .text__align__left {
     text-align: left;
+}
+
+.slider {
+    width: 45%;  
 }

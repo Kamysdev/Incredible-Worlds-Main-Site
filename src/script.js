@@ -60,3 +60,63 @@ window.addEventListener('scroll', () => {
 
     lastScrollTop = scrollDistance;
 });
+
+//////////////////////////////////////////////////////////////////////////////////
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [55.040518, 82.900451],
+        zoom: 15,
+        controls: [ ]
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+    
+    // Точка на карте
+    myPlacemark = new ymaps.Placemark([55.040518, 82.900451], {
+        balloonContentHeader: "Incredible World",
+        balloonContentBody: "Главный офис компании-разработчика видеоигр",
+        balloonContentFooter: "Красноярская улица, 35",
+    },{
+        iconColor: '#B349D9'
+    });
+
+    // Это путь в виде линии 
+    var myPolyline = new ymaps.GeoObject({
+        geometry: {
+            type: "LineString",
+            coordinates: [
+                [55.040210, 82.900774],
+                [55.040158, 82.900826],
+                [55.040249, 82.901051],
+                [55.040384, 82.900943],
+                [55.040424, 82.901049],
+                [55.038622, 82.903004],
+                [55.036694, 82.897419],
+                [55.036008, 82.897424]
+            ]
+        }
+    },
+    {
+        strokeColor: "#B349D9",
+        strokeWidth: 4,
+        strokeOpacity: 0.5
+    });
+
+    // Это путь в виде пути, использует данные яндекса для просчета маршрута
+    var multiRoute = new ymaps.multiRouter.MultiRoute({   
+        referencePoints: [
+            [55.040216, 82.900758],
+            [55.036008, 82.897436],
+        ],
+        params: {
+          routingMode: "pedestrian"  
+        }
+    }, {
+          boundsAutoApply: true
+    });
+
+    myMap.geoObjects.add(myPlacemark).add(myPolyline).add(multiRoute);
+}

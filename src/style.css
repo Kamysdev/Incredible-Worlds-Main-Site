@@ -334,6 +334,18 @@ h5 {
     height: auto;
 }
 
+.map__container {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0px;
+}
+
+.map {
+    border: 4px solid #B349D9;
+    height: 600px;
+    width: 100%;
+}
+
 @media (max-width: 1150px) {
     .team__shortcut {
         width: 70%;

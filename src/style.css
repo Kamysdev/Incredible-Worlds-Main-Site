@@ -155,6 +155,13 @@ h5 {
     justify-content: space-between;
 }
 
+.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 .header__flex li {
     display: inline;
 }

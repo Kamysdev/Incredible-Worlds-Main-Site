@@ -1,18 +1,36 @@
 $(function () {
     let header = $('.header');
-    let hederHeight = header.height(); // вычисляем высоту шапки
+    let hederHeight = header.height() + 16; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    let lastScrollTop = 0;
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-            header.addClass('header_fixed');
-            $('body').css({
-                'paddingTop': hederHeight + 'px' // делаем отступ у body, равный высоте шапки
-            });
-        } else {
+        let scrollDistance = window.scrollY;
+        // if ($(this).scrollTop() > 1) {
+        //     header.addClass('header_fixed');
+
+        //     $('body').css({
+        //         'paddingTop': hederHeight + 'px' // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ body, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        //     });
+        // } else {
+        //     header.removeClass('header_fixed');
+        //     $('body').css({
+        //         'paddingTop': 0 // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ body, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        //     })
+        // }
+
+        if (scrollDistance > lastScrollTop)
+        {
             header.removeClass('header_fixed');
             $('body').css({
-                'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
-            })
+                'paddingTop': 0
+            })        
+        } else {
+            header.addClass('header_fixed');           
+            $('body').css({
+               'paddingTop': hederHeight + 'px'
+           }); 
         }
+
+        lastScrollTop = scrollDistance;
     });
 });

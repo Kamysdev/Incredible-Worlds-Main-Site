@@ -4,6 +4,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background: linear-gradient(180deg, #CB6AEE 0%, #8533B2 14.3%, #5A1287 31.01%, #420C64 47.34%);
+    padding-top: 81px;
 }
 
 * {
@@ -148,6 +149,11 @@ h5 {
     width: 100%;
     background-color: white;
     padding: 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: transform .15s linear;
 }
 
 .header__flex {
@@ -155,11 +161,8 @@ h5 {
     justify-content: space-between;
 }
 
-.header_fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+.header_animeted {
+    transform: translateY(-81px);
 }
 
 .header__flex li {

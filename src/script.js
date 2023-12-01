@@ -42,3 +42,21 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+//////////////////////////////////////////////////////////////////////////////////
+
+let header = document.querySelector('.header');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+
+    if (scrollDistance > lastScrollTop)
+    {
+        header.classList.add('header_animeted');        
+    } else {
+        header.classList.remove('header_animeted');
+    }
+
+    lastScrollTop = scrollDistance;
+});

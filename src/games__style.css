@@ -26,19 +26,32 @@ p {
     word-wrap: break-word;
 }
 
+
+
 body {
     background: linear-gradient(180deg, #150727 0%, #1B023C 100%);
 }
 
 .textcolor__yl {
-    color: #FAFF00;
+    color: #F2FF00;
+    transition: color 0.25s ease-in-out;
 }
+
+    .textcolor__yl:hover {
+        color: #A8B012;
+    }
+
 
 .header {
     width: 100%;
-    background-color: #1D1D1D;
+    background: linear-gradient(180deg, #1D1D1D 45%, rgba(28.69, 28.69, 28.69, 0.49) 80%, rgba(28.69, 28.69, 28.69, 0) 100%);
     padding: 8px 0px;
     z-index: 100;
+}
+
+.logo_game__upscale {
+    border-left: 3px #F2FF00 solid;
+    padding-left: 12px;
 }
 
 .header_fixed {

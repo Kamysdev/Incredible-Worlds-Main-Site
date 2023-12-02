@@ -3,7 +3,7 @@
 h1 {
     color: #FAFF00;
     font-size: 64px;
-    font-family: Chakra Petch;
+    font-family: 'Chakra Petch';
     font-weight: 700;
     word-wrap: break-word;
     text-align: center;
@@ -13,7 +13,7 @@ h1 {
 h2 {
     color: #FAFF00;
     font-size: 48px;
-    font-family: Chakra Petch;
+    font-family: 'Chakra Petch';
     font-weight: 600;
     text-transform: uppercase;
     word-wrap: break-word;
